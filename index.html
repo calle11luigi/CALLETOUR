@@ -7,10 +7,7 @@
 
 <style>
 
-/* ============================= */
-/*         GLOBAL STYLE          */
-/* ============================= */
-
+/* ===== GLOBAL ===== */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -21,12 +18,10 @@ body {
 
 h1, h2, h3 {
   color: #003366;
+  margin-top: 0;
 }
 
-/* ============================= */
-/*          HEADER               */
-/* ============================= */
-
+/* ===== HEADER ===== */
 header {
   text-align: center;
   padding: 30px 10px;
@@ -35,29 +30,26 @@ header {
 }
 
 header img {
-  width: 140px;
+  width: 150px;
 }
 
 nav {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 nav a {
   text-decoration: none;
   color: #003366;
   font-weight: bold;
-  margin: 0 15px;
-  font-size: 18px;
+  margin: 0 12px;
+  font-size: 17px;
 }
 
 nav a:hover {
   color: #0077cc;
 }
 
-/* ============================= */
-/*            HERO               */
-/* ============================= */
-
+/* ===== HERO ===== */
 .hero {
   text-align: center;
   padding: 40px 20px;
@@ -66,8 +58,7 @@ nav a:hover {
 }
 
 .hero h2 {
-  font-size: 28px;
-  margin-bottom: 12px;
+  font-size: 32px;
 }
 
 .hero p {
@@ -77,10 +68,7 @@ nav a:hover {
   color: #004d80;
 }
 
-/* ============================= */
-/*            SECTIONS           */
-/* ============================= */
-
+/* ===== GENERIC CARD ===== */
 section {
   padding: 40px 20px;
   max-width: 900px;
@@ -91,13 +79,8 @@ section {
   background: #ffffff;
   border: 2px solid #cfe2f3;
   padding: 25px;
-  margin-bottom: 30px;
   border-radius: 12px;
-}
-
-.card h2 {
-  margin-top: 0;
-  color: #003366;
+  margin-bottom: 30px;
 }
 
 table {
@@ -108,7 +91,6 @@ table {
 
 th {
   background: #e6f0fa;
-  color: #003366;
   padding: 10px;
   border: 1px solid #c9d8e8;
 }
@@ -118,23 +100,16 @@ td {
   border: 1px solid #d5e2ef;
 }
 
-/* ============================= */
-/*        RESULT FIELDS          */
-/* ============================= */
-
+/* ===== RESULT INPUT ===== */
 input.resbox {
   width: 60px;
   padding: 5px;
-  margin: 4px 0;
+  text-align: center;
   border: 1px solid #99c2e6;
   border-radius: 6px;
-  text-align: center;
 }
 
-/* ============================= */
-/*           BUTTON              */
-/* ============================= */
-
+/* ===== BUTTON ===== */
 button {
   padding: 12px 20px;
   background: #0077cc;
@@ -149,10 +124,7 @@ button:hover {
   background: #005fa3;
 }
 
-/* ============================= */
-/*            FOOTER             */
-/* ============================= */
-
+/* ===== FOOTER ===== */
 footer {
   text-align: center;
   padding: 30px;
@@ -165,16 +137,13 @@ footer {
 </head>
 
 
-
 <body>
 
-<!-- ============================= -->
-<!--             HEADER            -->
-<!-- ============================= -->
-
+<!-- ===== HEADER ===== -->
 <header>
-  <img src="LOGO.png" alt="CG Logga">
+  <img src="cg.png" alt="CG Logga">
   <h1>CG TOUREN 2026</h1>
+
   <nav>
     <a href="#start">Start</a>
     <a href="#regler">Regler</a>
@@ -186,56 +155,41 @@ footer {
 </header>
 
 
-
-<!-- ============================= -->
-<!--              HERO             -->
-<!-- ============================= -->
-
+<!-- ===== HERO ===== -->
 <section id="start" class="hero">
   <h2>Välkommen till CG Touren 2026</h2>
-  <p>En tävling där vänskap möter prestige. Följ tourens schema, regler, prispott och resultat – allt samlat på en plats.</p>
+  <p>En tävling där vänskap möter prestige. Här hittar du regler, schema, prispott och live‑resultat.</p>
 </section>
 
 
-
-<!-- ============================= -->
-<!--             REGLER            -->
-<!-- ============================= -->
-
+<!-- ===== REGLER ===== -->
 <section id="regler" class="card">
   <h2>Regler</h2>
   <ul>
-    <li>Alla spelare deltar på samtliga tävlingar.</li>
-    <li>Vid delad placering ges medelpoäng.</li>
-    <li>Longest Drive (LD) och Closest To Pin (CTP) varje tävling.</li>
-    <li>Tiebreak totalt: 1) Flest vinster 2) Placering i finalen 3) Flest birdies.</li>
+    <li>Alla spelare deltar i varje tävling.</li>
+    <li>Vid delad placering delas medelpoäng.</li>
+    <li>LD och CTP utdelas varje tävling.</li>
+    <li>Finalen spelas med dubbel poäng.</li>
+    <li>Vid tie totalt används: vinster → finalplacering → birdies.</li>
   </ul>
 </section>
 
 
-
-<!-- ============================= -->
-<!--          PRISPOTT            -->
-<!-- ============================= -->
-
+<!-- ===== PRISPOTT ===== -->
 <section id="prispott" class="card">
   <h2>Prispott</h2>
-  <p>100 kr × 8 spelare × 11 tävlingar = <b>8 800 kr</b></p>
+  <p>100 kr × 8 spelare × 11 tävlingar = <b>8800 kr</b></p>
 
-  <h3>Fördelning</h3>
+  <h3>Fördelning:</h3>
   <ul>
-    <li><b>Tourpott:</b> 70% = 6 160 kr</li>
-    <li><b>Finalpott:</b> 20% = 1 760 kr</li>
-    <li><b>Specialpriser:</b> 10% = 880 kr</li>
+    <li><b>70%</b> Tourpott – 6160 kr</li>
+    <li><b>20%</b> Finalpott – 1760 kr</li>
+    <li><b>10%</b> Specialpriser – 880 kr</li>
   </ul>
 </section>
 
 
-
-<!-- ============================= -->
-<!--         POÄNGSYSTEM           -->
-<!-- ============================= -->
-
+<!-- ===== POÄNGSYSTEM ===== -->
 <section id="poang" class="card">
   <h2>Poängsystem</h2>
   <table>
@@ -249,19 +203,15 @@ footer {
     <tr><td>7</td><td>4</td></tr>
     <tr><td>8</td><td>3</td></tr>
   </table>
-
-  <p><b>Major:</b> 1.5× poäng</p>
+  <p><b>Majors:</b> 1.5× poäng</p>
   <p><b>Final:</b> 2× poäng</p>
 </section>
 
 
-
-<!-- ============================= -->
-<!--            SCHEMA             -->
-<!-- ============================= -->
-
+<!-- ===== SCHEMA ===== -->
 <section id="schema" class="card">
   <h2>Tävlingsschema</h2>
+
   <table>
     <tr><th>#</th><th>Datum</th><th>Typ</th></tr>
     <tr><td>1</td><td>11 maj</td><td>Ordinarie</td></tr>
@@ -279,14 +229,9 @@ footer {
 </section>
 
 
-
-<!-- ============================= -->
-<!--           RESULTAT            -->
-<!-- ============================= -->
-
+<!-- ===== RESULTAT ===== -->
 <section id="resultat" class="card">
   <h2>Resultat</h2>
-
   <div id="inputs"></div>
   <button onclick="calc()">Beräkna poäng</button>
 
@@ -295,11 +240,7 @@ footer {
 </section>
 
 
-
-<footer>
-  CG Touren 2026 – Skapad för Carl
-</footer>
-
+<footer>CG Touren 2026 – Skapad för Carl</footer>
 
 
 <script>
@@ -326,25 +267,29 @@ function calc(){
       let v = Number(document.querySelector(`#ev${i}_${p}`).value);
       if(v) map[p]=v;
     });
-    let pos = {};
+
+    let pos={};
     for(let p in map){
       if(!pos[map[p]]) pos[map[p]]=[];
       pos[map[p]].push(p);
     }
+
     let sorted = Object.keys(pos).map(Number).sort((a,b)=>a-b);
     sorted.forEach(pl=>{
       let tied = pos[pl];
-      let k = tied.length;
-      let sum=0; 
+      let k=tied.length;
+      let sum=0;
       for(let r=pl;r<pl+k;r++) sum += base[r-1]||0;
       let avg = Math.round(sum/k);
-      tied.forEach(p=> totals[p] += avg);
+      tied.forEach(p=> totals[p]+=avg);
     });
   }
 
-  let out = "<tr><th>#</th><th>Spelare</th><th>Poäng</th></tr>";
-  let sorted = Object.entries(totals).sort((a,b)=>b[1]-a[1]);
-  sorted.forEach((row,i)=> out += `<tr><td>${i+1}</td><td>${row[0]}</td><td>${row[1]}</td></tr>`);
+  let out="<tr><th>#</th><th>Spelare</th><th>Poäng</th></tr>";
+  Object.entries(totals)
+        .sort((a,b)=>b[1]-a[1])
+        .forEach((row,i)=> out += `<tr><td>${i+1}</td><td>${row[0]}</td><td>${row[1]}</td></tr>`);
+
   document.querySelector("#table").innerHTML = out;
 }
 
