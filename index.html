@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>CG Touren 2026</title>
 
 <style>
 
-/* ===== GLOBAL ===== */
+/* ============================= */
+/*         GLOBAL STYLE          */
+/* ============================= */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -21,7 +23,23 @@ h1, h2, h3 {
   margin-top: 0;
 }
 
-/* ===== HEADER ===== */
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  background: #ffffff;
+  border: 2px solid #cfe2f3;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+/* ============================= */
+/*            HEADER             */
+/* ============================= */
 header {
   text-align: center;
   padding: 30px 10px;
@@ -31,6 +49,7 @@ header {
 
 header img {
   width: 150px;
+  margin-bottom: 10px;
 }
 
 nav {
@@ -49,7 +68,9 @@ nav a:hover {
   color: #0077cc;
 }
 
-/* ===== HERO ===== */
+/* ============================= */
+/*             HERO              */
+/* ============================= */
 .hero {
   text-align: center;
   padding: 40px 20px;
@@ -68,21 +89,9 @@ nav a:hover {
   color: #004d80;
 }
 
-/* ===== GENERIC CARD ===== */
-section {
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-.card {
-  background: #ffffff;
-  border: 2px solid #cfe2f3;
-  padding: 25px;
-  border-radius: 12px;
-  margin-bottom: 30px;
-}
-
+/* ============================= */
+/*         TABLE STYLE           */
+/* ============================= */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -100,16 +109,21 @@ td {
   border: 1px solid #d5e2ef;
 }
 
-/* ===== RESULT INPUT ===== */
+/* ============================= */
+/*     RESULT INPUT FIELDS       */
+/* ============================= */
 input.resbox {
   width: 60px;
   padding: 5px;
   text-align: center;
   border: 1px solid #99c2e6;
   border-radius: 6px;
+  margin: 3px 0;
 }
 
-/* ===== BUTTON ===== */
+/* ============================= */
+/*           BUTTON              */
+/* ============================= */
 button {
   padding: 12px 20px;
   background: #0077cc;
@@ -124,7 +138,9 @@ button:hover {
   background: #005fa3;
 }
 
-/* ===== FOOTER ===== */
+/* ============================= */
+/*            FOOTER             */
+/* ============================= */
 footer {
   text-align: center;
   padding: 30px;
@@ -139,10 +155,13 @@ footer {
 
 <body>
 
-<!-- ===== HEADER ===== -->
+<!-- ============================= -->
+<!--            HEADER             -->
+<!-- ============================= -->
+
 <header>
-  <img src="cg.png" alt="CG Logga">
-  <h1>CG TOUREN 2026</h1>
+  <img src="cg.png" alt="CG Logga"/>
+  <h1>CG TOUR EN 2026</h1>
 
   <nav>
     <a href="#start">Start</a>
@@ -155,14 +174,20 @@ footer {
 </header>
 
 
-<!-- ===== HERO ===== -->
+<!-- ============================= -->
+<!--             HERO              -->
+<!-- ============================= -->
+
 <section id="start" class="hero">
   <h2>Välkommen till CG Touren 2026</h2>
   <p>En tävling där vänskap möter prestige. Här hittar du regler, schema, prispott och live‑resultat.</p>
 </section>
 
 
-<!-- ===== REGLER ===== -->
+<!-- ============================= -->
+<!--             REGLER            -->
+<!-- ============================= -->
+
 <section id="regler" class="card">
   <h2>Regler</h2>
   <ul>
@@ -170,28 +195,35 @@ footer {
     <li>Vid delad placering delas medelpoäng.</li>
     <li>LD och CTP utdelas varje tävling.</li>
     <li>Finalen spelas med dubbel poäng.</li>
-    <li>Vid tie totalt används: vinster → finalplacering → birdies.</li>
+    <li>Tie totalt: Vinster → Finalplacering → Birdies.</li>
   </ul>
 </section>
 
 
-<!-- ===== PRISPOTT ===== -->
+<!-- ============================= -->
+<!--            PRISPOTT           -->
+<!-- ============================= -->
+
 <section id="prispott" class="card">
   <h2>Prispott</h2>
-  <p>100 kr × 8 spelare × 11 tävlingar = <b>8800 kr</b></p>
+  <p>100 kr × 8 spelare × 11 tävlingar = <b>8 800 kr</b></p>
 
-  <h3>Fördelning:</h3>
+  <h3>Fördelning</h3>
   <ul>
-    <li><b>70%</b> Tourpott – 6160 kr</li>
-    <li><b>20%</b> Finalpott – 1760 kr</li>
-    <li><b>10%</b> Specialpriser – 880 kr</li>
+    <li>Tourpott (70%): 6 160 kr</li>
+    <li>Finalpott (20%): 1 760 kr</li>
+    <li>Specialpriser (10%): 880 kr</li>
   </ul>
 </section>
 
 
-<!-- ===== POÄNGSYSTEM ===== -->
+<!-- ============================= -->
+<!--         POÄNGSYSTEM           -->
+<!-- ============================= -->
+
 <section id="poang" class="card">
   <h2>Poängsystem</h2>
+
   <table>
     <tr><th>Placering</th><th>Poäng</th></tr>
     <tr><td>1</td><td>15</td></tr>
@@ -203,12 +235,16 @@ footer {
     <tr><td>7</td><td>4</td></tr>
     <tr><td>8</td><td>3</td></tr>
   </table>
-  <p><b>Majors:</b> 1.5× poäng</p>
-  <p><b>Final:</b> 2× poäng</p>
+
+  <p><b>Majors:</b> 1.5× poäng<br>
+     <b>Final:</b> 2× poäng</p>
 </section>
 
 
-<!-- ===== SCHEMA ===== -->
+<!-- ============================= -->
+<!--             SCHEMA            -->
+<!-- ============================= -->
+
 <section id="schema" class="card">
   <h2>Tävlingsschema</h2>
 
@@ -229,9 +265,13 @@ footer {
 </section>
 
 
-<!-- ===== RESULTAT ===== -->
+<!-- ============================= -->
+<!--            RESULTAT           -->
+<!-- ============================= -->
+
 <section id="resultat" class="card">
   <h2>Resultat</h2>
+
   <div id="inputs"></div>
   <button onclick="calc()">Beräkna poäng</button>
 
@@ -240,57 +280,85 @@ footer {
 </section>
 
 
-<footer>CG Touren 2026 – Skapad för Carl</footer>
+<footer>
+  CG Touren 2026 – Skapad för Carl
+</footer>
+
 
 
 <script>
 
 /* ------- Resultatfunktion ---------- */
 
-const players = ["Spelare 1","Spelare 2","Spelare 3","Spelare 4","Spelare 5","Spelare 6","Spelare 7","Spelare 8"];
+const players = [
+  "Spelare 1","Spelare 2","Spelare 3","Spelare 4",
+  "Spelare 5","Spelare 6","Spelare 7","Spelare 8"
+];
+
 const events = 11;
 const base = [15,12,10,8,6,5,4,3];
 
-let html="";
-for (let i=1;i<=events;i++){
+// Build input fields
+let html = "";
+for (let i = 1; i <= events; i++) {
   html += `<h3>Deltävling ${i}</h3>`;
-  players.forEach(p=> html += `${p}: <input id="ev${i}_${p}" class="resbox"><br>`);
+  players.forEach(p => {
+    html += `${p}: <input id="ev${i}_${p}" class="resbox"><br>`;
+  });
 }
-document.querySelector("#inputs").innerHTML = html;
+document.getElementById("inputs").innerHTML = html;
 
-function calc(){
-  let totals = {}; players.forEach(p=> totals[p]=0);
 
-  for(let i=1;i<=events;i++){
-    let map={};
-    players.forEach(p=>{
-      let v = Number(document.querySelector(`#ev${i}_${p}`).value);
-      if(v) map[p]=v;
+// Calculate points
+function calc() {
+
+  let totals = {};
+  players.forEach(p => totals[p] = 0);
+
+  for (let i = 1; i <= events; i++) {
+
+    let placements = {};
+
+    // Read placements
+    players.forEach(p => {
+      let val = Number(document.getElementById(`ev${i}_${p}`).value);
+      if (val) placements[p] = val;
     });
 
-    let pos={};
-    for(let p in map){
-      if(!pos[map[p]]) pos[map[p]]=[];
-      pos[map[p]].push(p);
+    // Group ties
+    let pos = {};
+    for (let p in placements) {
+      let plc = placements[p];
+      if (!pos[plc]) pos[plc] = [];
+      pos[plc].push(p);
     }
 
-    let sorted = Object.keys(pos).map(Number).sort((a,b)=>a-b);
-    sorted.forEach(pl=>{
+    let sorted = Object.keys(pos).map(Number).sort((a, b) => a - b);
+
+    sorted.forEach(pl => {
       let tied = pos[pl];
-      let k=tied.length;
-      let sum=0;
-      for(let r=pl;r<pl+k;r++) sum += base[r-1]||0;
-      let avg = Math.round(sum/k);
-      tied.forEach(p=> totals[p]+=avg);
+      let k = tied.length;
+      let sum = 0;
+
+      for (let r = pl; r < pl + k; r++) {
+        sum += base[r - 1] || 0;
+      }
+
+      let avg = Math.round(sum / k);
+
+      tied.forEach(p => totals[p] += avg);
     });
   }
 
-  let out="<tr><th>#</th><th>Spelare</th><th>Poäng</th></tr>";
-  Object.entries(totals)
-        .sort((a,b)=>b[1]-a[1])
-        .forEach((row,i)=> out += `<tr><td>${i+1}</td><td>${row[0]}</td><td>${row[1]}</td></tr>`);
+  let rows = "<tr><th>#</th><th>Spelare</th><th>Poäng</th></tr>";
 
-  document.querySelector("#table").innerHTML = out;
+  Object.entries(totals)
+    .sort((a, b) => b[1] - a[1])
+    .forEach((row, i) => {
+      rows += `<tr><td>${i + 1}</td><td>${row[0]}</td><td>${row[1]}</td></tr>`;
+    });
+
+  document.getElementById("table").innerHTML = rows;
 }
 
 </script>
