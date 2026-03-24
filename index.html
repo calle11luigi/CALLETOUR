@@ -2,183 +2,240 @@
 <html lang="sv">
 <head>
 <meta charset="UTF-8">
-<title>CG Touren 2026</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CG Touren 2026</title>
 
 <style>
 
-/* -------------------- GLOBAL -------------------- */
+/* ============================= */
+/*         GLOBAL STYLE          */
+/* ============================= */
 
 body {
-  margin: 0;
-  background: #02040a;
   font-family: Arial, sans-serif;
-  color: #cfe8ff;
-  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #003366;
 }
 
 h1, h2, h3 {
-  color: #6ac6ff;
-  text-shadow: 0 0 20px #2ea8ff;
+  color: #003366;
 }
 
-section {
-  padding: 40px 20px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-/* -------------------- HEADER -------------------- */
+/* ============================= */
+/*          HEADER               */
+/* ============================= */
 
 header {
   text-align: center;
-  padding: 40px 20px 10px;
+  padding: 30px 10px;
+  border-bottom: 4px solid #003366;
+  background: #ffffff;
 }
 
-.logo {
-  width: 160px;
-  filter: drop-shadow(0 0 25px #2ea8ff);
+header img {
+  width: 140px;
 }
 
 nav {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 nav a {
-  color: #9fd7ff;
   text-decoration: none;
-  margin: 0 12px;
-  font-size: 18px;
+  color: #003366;
   font-weight: bold;
-  text-shadow: 0 0 6px #2ea8ff;
+  margin: 0 15px;
+  font-size: 18px;
 }
 
 nav a:hover {
-  color: #ffffff;
+  color: #0077cc;
 }
 
-/* -------------------- HERO -------------------- */
+/* ============================= */
+/*            HERO               */
+/* ============================= */
 
 .hero {
   text-align: center;
-  margin-top: 10px;
-  padding-bottom: 30px;
+  padding: 40px 20px;
+  background: #f4f8fb;
+  border-bottom: 3px solid #003366;
 }
 
 .hero h2 {
   font-size: 28px;
-  color: #6ac6ff;
+  margin-bottom: 12px;
 }
 
 .hero p {
   font-size: 18px;
-  color: #9fd7ff;
+  max-width: 700px;
+  margin: auto;
+  color: #004d80;
 }
 
-/* -------------------- CARD DESIGN -------------------- */
+/* ============================= */
+/*            SECTIONS           */
+/* ============================= */
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
 
 .card {
-  background: rgba(15, 20, 35, 0.7);
-  border: 1px solid #2ea8ff;
-  box-shadow: 0 0 25px #2ea8ff;
-  border-radius: 18px;
+  background: #ffffff;
+  border: 2px solid #cfe2f3;
   padding: 25px;
-  margin: 30px 0;
+  margin-bottom: 30px;
+  border-radius: 12px;
 }
 
-/* -------------------- TABLE -------------------- */
+.card h2 {
+  margin-top: 0;
+  color: #003366;
+}
 
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-top: 15px;
 }
 
 th {
-  background: rgba(25, 40, 60, 0.9);
-  color: #6ac6ff;
+  background: #e6f0fa;
+  color: #003366;
   padding: 10px;
+  border: 1px solid #c9d8e8;
 }
 
 td {
   padding: 10px;
-  border-bottom: 1px solid #244;
+  border: 1px solid #d5e2ef;
 }
 
-/* -------------------- RESULT INPUTS -------------------- */
+/* ============================= */
+/*        RESULT FIELDS          */
+/* ============================= */
 
 input.resbox {
   width: 60px;
-  padding: 6px;
+  padding: 5px;
   margin: 4px 0;
-  background: #07111f;
-  border: 1px solid #2ea8ff;
+  border: 1px solid #99c2e6;
   border-radius: 6px;
-  color: #9fd7ff;
   text-align: center;
 }
 
+/* ============================= */
+/*           BUTTON              */
+/* ============================= */
+
 button {
   padding: 12px 20px;
-  margin-top: 10px;
-  background: #2ea8ff;
+  background: #0077cc;
+  color: white;
   border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  color: #00131f;
+  border-radius: 6px;
   font-weight: bold;
-  box-shadow: 0 0 20px #2ea8ff;
-  font-size: 16px;
+  cursor: pointer;
 }
 
 button:hover {
-  filter: brightness(1.2);
+  background: #005fa3;
 }
+
+/* ============================= */
+/*            FOOTER             */
+/* ============================= */
 
 footer {
   text-align: center;
   padding: 30px;
-  border-top: 1px solid #2ea8ff;
+  color: #003366;
+  border-top: 3px solid #003366;
   margin-top: 40px;
-  color: #6ac6ff;
 }
 
 </style>
 </head>
 
+
+
 <body>
 
-<!-- ---------------- HEADER ---------------- -->
-<header>
-  <img src="YOUR_LOGO.png" class="logo">
-  <h1>CG TOUREN 2026</h1>
+<!-- ============================= -->
+<!--             HEADER            -->
+<!-- ============================= -->
 
+<header>
+  <img src="LOGO.png" alt="CG Logga">
+  <h1>CG TOUREN 2026</h1>
   <nav>
+    <a href="#start">Start</a>
     <a href="#regler">Regler</a>
-    <a href="#poang">Poängsystem</a>
     <a href="#prispott">Prispott</a>
+    <a href="#poang">Poängsystem</a>
     <a href="#schema">Schema</a>
     <a href="#resultat">Resultat</a>
   </nav>
 </header>
 
-<!-- ---------------- HERO ---------------- -->
-<div class="hero">
-  <h2>Välkommen till årets mest prestigefyllda tour</h2>
-  <p>Där vänskap möter tävlingsinstinkt och bragging rights står på spel.</p>
-</div>
 
-<!-- ---------------- REGLER ---------------- -->
+
+<!-- ============================= -->
+<!--              HERO             -->
+<!-- ============================= -->
+
+<section id="start" class="hero">
+  <h2>Välkommen till CG Touren 2026</h2>
+  <p>En tävling där vänskap möter prestige. Följ tourens schema, regler, prispott och resultat – allt samlat på en plats.</p>
+</section>
+
+
+
+<!-- ============================= -->
+<!--             REGLER            -->
+<!-- ============================= -->
+
 <section id="regler" class="card">
   <h2>Regler</h2>
   <ul>
-    <li>Alla spelare är medlemmar och spelar gratis.</li>
-    <li>LD & CTP utdelas varje tävling.</li>
-    <li>Tie i tävling → medelpoäng.</li>
-    <li>Tie totalt → Flest vinster → placering i final → flest birdies.</li>
+    <li>Alla spelare deltar på samtliga tävlingar.</li>
+    <li>Vid delad placering ges medelpoäng.</li>
+    <li>Longest Drive (LD) och Closest To Pin (CTP) varje tävling.</li>
+    <li>Tiebreak totalt: 1) Flest vinster 2) Placering i finalen 3) Flest birdies.</li>
   </ul>
 </section>
 
-<!-- ---------------- POÄNGSYSTEM ---------------- -->
+
+
+<!-- ============================= -->
+<!--          PRISPOTT            -->
+<!-- ============================= -->
+
+<section id="prispott" class="card">
+  <h2>Prispott</h2>
+  <p>100 kr × 8 spelare × 11 tävlingar = <b>8 800 kr</b></p>
+
+  <h3>Fördelning</h3>
+  <ul>
+    <li><b>Tourpott:</b> 70% = 6 160 kr</li>
+    <li><b>Finalpott:</b> 20% = 1 760 kr</li>
+    <li><b>Specialpriser:</b> 10% = 880 kr</li>
+  </ul>
+</section>
+
+
+
+<!-- ============================= -->
+<!--         POÄNGSYSTEM           -->
+<!-- ============================= -->
+
 <section id="poang" class="card">
   <h2>Poängsystem</h2>
   <table>
@@ -192,22 +249,17 @@ footer {
     <tr><td>7</td><td>4</td></tr>
     <tr><td>8</td><td>3</td></tr>
   </table>
-  <p><b>Major:</b> 1.5× poäng — <b>Final:</b> 2× poäng</p>
+
+  <p><b>Major:</b> 1.5× poäng</p>
+  <p><b>Final:</b> 2× poäng</p>
 </section>
 
-<!-- ---------------- PRISPOTT ---------------- -->
-<section id="prispott" class="card">
-  <h2>Prispott</h2>
-  <p>100 kr × 8 spelare × 11 tävlingar = <b>8800 kr</b></p>
 
-  <ul>
-    <li><b>Tourpott 70%</b> – 6160 kr</li>
-    <li><b>Finalpott 20%</b> – 1760 kr</li>
-    <li><b>Specialpriser 10%</b> – 880 kr</li>
-  </ul>
-</section>
 
-<!-- ---------------- SCHEMA ---------------- -->
+<!-- ============================= -->
+<!--            SCHEMA             -->
+<!-- ============================= -->
+
 <section id="schema" class="card">
   <h2>Tävlingsschema</h2>
   <table>
@@ -226,9 +278,15 @@ footer {
   </table>
 </section>
 
-<!-- ---------------- RESULTAT ---------------- -->
+
+
+<!-- ============================= -->
+<!--           RESULTAT            -->
+<!-- ============================= -->
+
 <section id="resultat" class="card">
   <h2>Resultat</h2>
+
   <div id="inputs"></div>
   <button onclick="calc()">Beräkna poäng</button>
 
@@ -236,12 +294,16 @@ footer {
   <table id="table"></table>
 </section>
 
+
+
 <footer>
-  CG Touren 2026 · Skapad för Carl
+  CG Touren 2026 – Skapad för Carl
 </footer>
 
 
+
 <script>
+
 /* ------- Resultatfunktion ---------- */
 
 const players = ["Spelare 1","Spelare 2","Spelare 3","Spelare 4","Spelare 5","Spelare 6","Spelare 7","Spelare 8"];
