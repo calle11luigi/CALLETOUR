@@ -6,9 +6,7 @@
 <title>CG Touren 2026</title>
 
 <style>
-
 /* ==================== GLOBAL ==================== */
-
 :root {
   --blue: #003366;
   --blue-light: #0077cc;
@@ -24,133 +22,103 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Fade-in all sections */
+/* Fade-in animation */
 section, header, footer {
   animation: fadeIn 1s ease forwards;
   opacity: 0;
 }
+@keyframes fadeIn { to { opacity: 1; } }
 
-@keyframes fadeIn {
-  to { opacity: 1; }
-}
-
-/* Slide-up effect */
+/* Slide-up animation on cards */
 .card {
-  animation: slideUp 0.7s ease;
+  animation: slideUp .7s ease forwards;
+  opacity: 0;
 }
-
 @keyframes slideUp {
   from { transform: translateY(20px); opacity: 0; }
   to   { transform: translateY(0); opacity: 1; }
 }
 
 /* ==================== HEADER ==================== */
-
 header {
   text-align: center;
-  padding: 30px 20px 15px;
+  padding: 30px 20px;
   border-bottom: 4px solid var(--blue);
 }
-
 header h1 {
   font-size: 36px;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
-/* ==================== NAVIGATION ==================== */
-
+/* ==================== NAV ==================== */
 nav {
-  margin-top: 12px;
+  margin-top: 15px;
+  padding: 15px 0;
+  border-bottom: 2px solid var(--blue-light);
   position: sticky;
   top: 0;
-  background: white;
-  padding: 12px 0;
-  border-bottom: 2px solid var(--blue-light);
-  z-index: 50;
+  background: #fff;
+  z-index: 100;
 }
-
 nav a {
   text-decoration: none;
   margin: 0 15px;
   font-size: 18px;
   font-weight: bold;
   color: var(--blue);
-  transition: 0.2s;
 }
-
-nav a:hover {
-  color: var(--blue-light);
-}
+nav a:hover { color: var(--blue-light); }
 
 /* ==================== HERO ==================== */
-
 .hero {
   background: var(--grey-light);
   padding: 60px 20px;
   text-align: center;
   border-bottom: 3px solid var(--blue);
 }
-
-.hero h2 {
-  font-size: 34px;
-  margin-bottom: 12px;
-}
-
-.hero p {
-  font-size: 18px;
-  max-width: 700px;
-  margin: auto;
-}
+.hero h2 { font-size: 34px; }
+.hero p { font-size: 18px; max-width: 700px; margin: auto; }
 
 /* ==================== SECTIONS ==================== */
-
 section {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   padding: 40px 20px;
 }
-
 .card {
   background: white;
   border: 2px solid var(--blue-soft);
   padding: 25px;
   border-radius: 14px;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 /* ==================== TABLE ==================== */
-
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 14px;
 }
-
 th {
   background: var(--blue-soft);
-  color: var(--blue);
   padding: 10px;
   border: 1px solid #c9d8e8;
   font-weight: bold;
 }
-
 td {
   padding: 10px;
   border: 1px solid #dbe7f4;
 }
-
 #table tr:nth-child(even) {
   background: #f6fbff;
 }
 
 /* ==================== PLAYER MANAGEMENT ==================== */
-
 .player-controls {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
 }
-
 .player-controls input {
   flex: 1;
   padding: 10px;
@@ -158,7 +126,6 @@ td {
   border-radius: 6px;
   font-size: 16px;
 }
-
 #playerList div {
   background: var(--grey-light);
   padding: 10px 14px;
@@ -167,9 +134,7 @@ td {
   border: 1px solid var(--blue-soft);
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-
 #playerList button {
   background: #cc0000;
   color: white;
@@ -178,12 +143,7 @@ td {
   padding: 6px 12px;
   cursor: pointer;
 }
-
-#playerList button:hover {
-  background: #990000;
-}
-
-/* ==================== INPUT FIELDS ==================== */
+#playerList button:hover { background: #990000; }
 
 input.resfield {
   width: 100px;
@@ -195,35 +155,27 @@ input.resfield {
 }
 
 /* ==================== BUTTON ==================== */
-
 button {
   padding: 12px 20px;
   background: var(--blue-light);
   color: white;
   border: none;
   border-radius: 6px;
-  cursor: pointer;
   font-weight: bold;
-  transition: 0.2s;
+  cursor: pointer;
 }
-
-button:hover {
-  background: #005fa3;
-}
+button:hover { background: #005fa3; }
 
 /* ==================== FOOTER ==================== */
-
 footer {
   text-align: center;
   padding: 30px;
   border-top: 3px solid var(--blue);
   margin-top: 40px;
 }
-
 </style>
+
 </head>
-
-
 <body>
 
 <header>
@@ -241,32 +193,29 @@ footer {
 
 <section id="start" class="hero">
   <h2>Välkommen till CG Touren 2026</h2>
-  <p>Din egen PGA‑inspirerade tävlingssida. Allt på ett ställe — schema, regler, prispott och live‑resultat.</p>
+  <p>En ren, proffsig och enkel sida där du kan följa schema, regler, prispott och resultat.</p>
 </section>
-
 
 <section id="regler" class="card">
   <h2>Regler</h2>
   <ul>
-    <li>Alla spelare deltar i samtliga tävlingar.</li>
-    <li>LD & CTP varje runda.</li>
-    <li>Vid delad placering delas medelpoäng.</li>
+    <li>Alla spelare deltar i varje tävling.</li>
+    <li>LD & CTP varje tävling.</li>
+    <li>Delad placering = medelpoäng.</li>
     <li>Final = dubbel poäng.</li>
     <li>Tie-break totalt: Vinster → Finalplacering → Birdies.</li>
   </ul>
 </section>
 
-
 <section id="prispott" class="card">
   <h2>Prispott</h2>
-  <p><b>Total pott: 8 800 kr</b></p>
+  <p><b>Total prispott: 8 800 kr</b></p>
   <ul>
-    <li>70% Tourpott – 6 160 kr</li>
-    <li>20% Finalpott – 1 760 kr</li>
-    <li>10% Specialpriser – 880 kr</li>
+    <li>Tourpott (70%): 6 160 kr</li>
+    <li>Finalpott (20%): 1 760 kr</li>
+    <li>Specialpriser (10%): 880 kr</li>
   </ul>
 </section>
-
 
 <section id="poang" class="card">
   <h2>Poängsystem</h2>
@@ -286,7 +235,6 @@ footer {
   <p><b>Major:</b> 1.5× poäng | <b>Final:</b> 2× poäng</p>
 </section>
 
-
 <section id="schema" class="card">
   <h2>Tävlingsschema</h2>
 
@@ -305,8 +253,6 @@ footer {
     <tr><td>11</td><td>5 okt</td><td>FINAL</td></tr>
   </table>
 </section>
-
-
 
 <section id="resultat" class="card">
   <h2>Resultat</h2>
@@ -328,12 +274,11 @@ footer {
   <table id="table"></table>
 </section>
 
-
-<footer>CG Touren 2026 – Skapad för Carl</footer>
-
+<footer>
+  CG Touren 2026 – Skapad för Carl
+</footer>
 
 <script>
-
 /* ========= SPELARE ========= */
 let players = ["Calle","Felix","Nicklas","Leo","Marcus","Oskar","Tiger","Hugo","Lucas"];
 const events = 11;
@@ -382,7 +327,7 @@ function renderPlacementInputs() {
       `;
     });
   }
-  document.querySelector("#inputs").innerHTML = html;
+  document.getElementById("inputs").innerHTML = html;
 }
 
 /* ========= RÄKNA UT POÄNG ========= */
@@ -439,7 +384,6 @@ function calc() {
 
 /* Starta sidan */
 renderPlayers();
-
 </script>
 
 </body>
