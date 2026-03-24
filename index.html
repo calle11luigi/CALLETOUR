@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<title>CG Touren 2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+/* -------------------- GLOBAL -------------------- */
+
+body {
+  margin: 0;
+  background: #02040a;
+  font-family: Arial, sans-serif;
+  color: #cfe8ff;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  color: #6ac6ff;
+  text-shadow: 0 0 20px #2ea8ff;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* -------------------- HEADER -------------------- */
+
+header {
+  text-align: center;
+  padding: 40px 20px 10px;
+}
+
+.logo {
+  width: 160px;
+  filter: drop-shadow(0 0 25px #2ea8ff);
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #9fd7ff;
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0 0 6px #2ea8ff;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* -------------------- HERO -------------------- */
+
+.hero {
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+
+.hero h2 {
+  font-size: 28px;
+  color: #6ac6ff;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #9fd7ff;
+}
+
+/* -------------------- CARD DESIGN -------------------- */
+
+.card {
+  background: rgba(15, 20, 35, 0.7);
+  border: 1px solid #2ea8ff;
+  box-shadow: 0 0 25px #2ea8ff;
+  border-radius: 18px;
+  padding: 25px;
+  margin: 30px 0;
+}
+
+/* -------------------- TABLE -------------------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: rgba(25, 40, 60, 0.9);
+  color: #6ac6ff;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #244;
+}
+
+/* -------------------- RESULT INPUTS -------------------- */
+
+input.resbox {
+  width: 60px;
+  padding: 6px;
+  margin: 4px 0;
+  background: #07111f;
+  border: 1px solid #2ea8ff;
+  border-radius: 6px;
+  color: #9fd7ff;
+  text-align: center;
+}
+
+button {
+  padding: 12px 20px;
+  margin-top: 10px;
+  background: #2ea8ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #00131f;
+  font-weight: bold;
+  box-shadow: 0 0 20px #2ea8ff;
+  font-size: 16px;
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #2ea8ff;
+  margin-top: 40px;
+  color: #6ac6ff;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ---------------- HEADER ---------------- -->
+<header>
+  <img src="YOUR_LOGO.png" class="logo">
+  <h1>CG TOUREN 2026</h1>
+
+  <nav>
+    <a href="#regler">Regler</a>
+    <a href="#poang">Poängsystem</a>
+    <a href="#prispott">Prispott</a>
+    <a href="#schema">Schema</a>
+    <a href="#resultat">Resultat</a>
+  </nav>
+</header>
+
+<!-- ---------------- HERO ---------------- -->
+<div class="hero">
+  <h2>Välkommen till årets mest prestigefyllda tour</h2>
+  <p>Där vänskap möter tävlingsinstinkt och bragging rights står på spel.</p>
+</div>
+
+<!-- ---------------- REGLER ---------------- -->
+<section id="regler" class="card">
+  <h2>Regler</h2>
+  <ul>
+    <li>Alla spelare är medlemmar och spelar gratis.</li>
+    <li>LD & CTP utdelas varje tävling.</li>
+    <li>Tie i tävling → medelpoäng.</li>
+    <li>Tie totalt → Flest vinster → placering i final → flest birdies.</li>
+  </ul>
+</section>
+
+<!-- ---------------- POÄNGSYSTEM ---------------- -->
+<section id="poang" class="card">
+  <h2>Poängsystem</h2>
+  <table>
+    <tr><th>Placering</th><th>Poäng</th></tr>
+    <tr><td>1</td><td>15</td></tr>
+    <tr><td>2</td><td>12</td></tr>
+    <tr><td>3</td><td>10</td></tr>
+    <tr><td>4</td><td>8</td></tr>
+    <tr><td>5</td><td>6</td></tr>
+    <tr><td>6</td><td>5</td></tr>
+    <tr><td>7</td><td>4</td></tr>
+    <tr><td>8</td><td>3</td></tr>
+  </table>
+  <p><b>Major:</b> 1.5× poäng — <b>Final:</b> 2× poäng</p>
+</section>
+
+<!-- ---------------- PRISPOTT ---------------- -->
+<section id="prispott" class="card">
+  <h2>Prispott</h2>
+  <p>100 kr × 8 spelare × 11 tävlingar = <b>8800 kr</b></p>
+
+  <ul>
+    <li><b>Tourpott 70%</b> – 6160 kr</li>
+    <li><b>Finalpott 20%</b> – 1760 kr</li>
+    <li><b>Specialpriser 10%</b> – 880 kr</li>
+  </ul>
+</section>
+
+<!-- ---------------- SCHEMA ---------------- -->
+<section id="schema" class="card">
+  <h2>Tävlingsschema</h2>
+  <table>
+    <tr><th>#</th><th>Datum</th><th>Typ</th></tr>
+    <tr><td>1</td><td>11 maj</td><td>Ordinarie</td></tr>
+    <tr><td>2</td><td>25 maj</td><td>Ordinarie</td></tr>
+    <tr><td>3</td><td>8 juni</td><td>Ordinarie</td></tr>
+    <tr><td>4</td><td>22 juni</td><td>Ordinarie</td></tr>
+    <tr><td>5</td><td>6 juli</td><td>MAJOR</td></tr>
+    <tr><td>6</td><td>20 juli</td><td>Ordinarie</td></tr>
+    <tr><td>7</td><td>3 aug</td><td>Ordinarie</td></tr>
+    <tr><td>8</td><td>17 aug</td><td>Ordinarie</td></tr>
+    <tr><td>9</td><td>7 sep</td><td>Ordinarie</td></tr>
+    <tr><td>10</td><td>21 sep</td><td>Ordinarie</td></tr>
+    <tr><td>11</td><td>5 okt</td><td>FINAL</td></tr>
+  </table>
+</section>
+
+<!-- ---------------- RESULTAT ---------------- -->
+<section id="resultat" class="card">
+  <h2>Resultat</h2>
+  <div id="inputs"></div>
+  <button onclick="calc()">Beräkna poäng</button>
+
+  <h3>Ställning</h3>
+  <table id="table"></table>
+</section>
+
+<footer>
+  CG Touren 2026 · Skapad för Carl
+</footer>
+
+
+<script>
+/* ------- Resultatfunktion ---------- */
+
+const players = ["Spelare 1","Spelare 2","Spelare 3","Spelare 4","Spelare 5","Spelare 6","Spelare 7","Spelare 8"];
+const events = 11;
+const base = [15,12,10,8,6,5,4,3];
+
+let html="";
+for (let i=1;i<=events;i++){
+  html += `<h3>Deltävling ${i}</h3>`;
+  players.forEach(p=> html += `${p}: <input id="ev${i}_${p}" class="resbox"><br>`);
+}
+document.querySelector("#inputs").innerHTML = html;
+
+function calc(){
+  let totals = {}; players.forEach(p=> totals[p]=0);
+
+  for(let i=1;i<=events;i++){
+    let map={};
+    players.forEach(p=>{
+      let v = Number(document.querySelector(`#ev${i}_${p}`).value);
+      if(v) map[p]=v;
+    });
+    let pos = {};
+    for(let p in map){
+      if(!pos[map[p]]) pos[map[p]]=[];
+      pos[map[p]].push(p);
+    }
+    let sorted = Object.keys(pos).map(Number).sort((a,b)=>a-b);
+    sorted.forEach(pl=>{
+      let tied = pos[pl];
+      let k = tied.length;
+      let sum=0; 
+      for(let r=pl;r<pl+k;r++) sum += base[r-1]||0;
+      let avg = Math.round(sum/k);
+      tied.forEach(p=> totals[p] += avg);
+    });
+  }
+
+  let out = "<tr><th>#</th><th>Spelare</th><th>Poäng</th></tr>";
+  let sorted = Object.entries(totals).sort((a,b)=>b[1]-a[1]);
+  sorted.forEach((row,i)=> out += `<tr><td>${i+1}</td><td>${row[0]}</td><td>${row[1]}</td></tr>`);
+  document.querySelector("#table").innerHTML = out;
+}
+
+</script>
+
+</body>
+</html>
